@@ -17,4 +17,5 @@ Below are brief descriptions of each project within this repository:
 
 3. Project Prismborn _Junior_:
    Project Prismborn (working title) is a passion project of mine that is currently in the purely conceptual stage. I intend for the game to be a 3D Action RPG set in a world where a small fraction of the population
-   are born with the power to control the elements.
+   are born with the power to control the elements. Players will take control of a central cast of characters that will embark on an adventure that makes up the story mode of the game. Within this current iteration of this
+   portfolio are some early level design concepts and a few character design concepts that I intend on fleshing out more.
