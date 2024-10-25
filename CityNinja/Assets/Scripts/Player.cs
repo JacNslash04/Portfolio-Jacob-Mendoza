@@ -4,25 +4,26 @@ using UnityEngine;
 
 public class Player : MonoBehaviour{
     // Start is called before the first frame update
-    public float gravity;
+    // Player fields
+    public float gravity = -50.0f;
     public Vector2 velocity;
-    public float acceleration = 10;
-    public float distance = 0;
-    public float maxAcceleration = 10;
-    public float jumpVelocity = 20; 
-    public float maxXVelocity = 100;
-    public float groundHeight = 10; 
+    public float acceleration = 0.4f;
+    public float distance = 0.0f;
+    public float maxAcceleration = 50.0f;
+    public float jumpVelocity = 30.0f; 
+    public float maxXVelocity = 50.0f;
+    public float groundHeight = 10.0f; 
     public bool isGrounded = false;
     public bool isHoldingJump = false;
     public float maxHoldJumpTime = 0.0f;
     public float capHoldJumpTime = 0.4f;
     public float holdJumpTimer = 0.0f;
-    public float jumpGroundThreshold = 1;
+    public float jumpGroundThreshold = 1.0f;
     public bool isDead = false;
     public LayerMask groundLayerMask;
     public LayerMask obstacleLayerMask;
     public LayerMask powerUpsLayerMask;
-    public int playerHealth = 5;
+    public int playerHealth = 3;
     public Animator animator;
     public bool isInvincible = false;
     public float invincibleTimer = 0.0f;
@@ -241,8 +242,8 @@ public class Player : MonoBehaviour{
         // Adds one heart to player health
         playerHealth = playerHealth + 1;
         // If player health after picking up heart is over the max health, the heart does nothing
-        if (playerHealth > 5){
-            playerHealth = 5;
+        if (playerHealth > 3){
+            playerHealth = 3;
         }
     }
 }

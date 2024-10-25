@@ -21,11 +21,13 @@ public class UIControllerTitleScreen : MonoBehaviour
 
     public void play()
     {
+        // Brings player to the controls screen before starting the game
         UnityEngine.SceneManagement.SceneManager.LoadScene("ControlScreen");
     }
 
     public void controls()
     {
+        // Brings player to the controls screen if they wish to read the controls first
         UnityEngine.SceneManagement.SceneManager.LoadScene("ControlScreen");
     }
 }

@@ -27,9 +27,12 @@ public class UIController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Sets up distance text that denotes player progress
+        // at top right of screen
         int distance = Mathf.FloorToInt(player.distance);
         distanceText.text = distance + " m";
 
+        // Brings up the game over screen after player has died
         if(player.isDead)
         {
             GameOverScreen.SetActive(true);
@@ -39,11 +42,13 @@ public class UIController : MonoBehaviour
 
     public void Quit()
     {
+        // Takes player back to the menu screen
         SceneManager.LoadScene("Menu");
     }
 
     public void Retry()
     {
+        // Restarts the game 
         SceneManager.LoadScene("SampleScene");
     }
 }

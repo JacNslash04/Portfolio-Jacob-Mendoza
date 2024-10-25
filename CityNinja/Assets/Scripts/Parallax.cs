@@ -16,6 +16,7 @@ public class Parallax : MonoBehaviour{
 
     // Update is called once per frame
     void Update(){
+        // Resets position of background objects after they've fully passed through the frame
        float realVelocity = player.velocity.x / depth; 
        Vector2 pos = transform.position;
 

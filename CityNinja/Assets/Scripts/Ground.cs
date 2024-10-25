@@ -28,6 +28,7 @@ public class Ground : MonoBehaviour{
 
     // Update is called once per frame
     void Update(){
+        // Sets up ground movement and procedural generation of platforms
         Vector2 pos = transform.position;
         pos.x -= player.velocity.x * Time.fixedDeltaTime;
 
@@ -47,10 +48,12 @@ public class Ground : MonoBehaviour{
         transform.position = pos;
     }
     void generateGround(){
+        // Creates platform objects with colliders set up 
         GameObject go = Instantiate(gameObject);
         BoxCollider2D goCollider = go.GetComponent<BoxCollider2D>();
         Vector2 pos; 
 
+        // Constraints put in place so that jump heights aren't impossible for player to reach
         float height1 = player.jumpVelocity * player.maxHoldJumpTime;
         float time = player.jumpVelocity / -player.gravity;
         float height2 = player.jumpVelocity * time + (0.5f * (player.gravity * (time * time)));
@@ -59,6 +62,7 @@ public class Ground : MonoBehaviour{
         maxY += groundHeight;
         float minY = 1;
         float realY = Random.Range(minY, maxY);
+
 
 
         pos.x = screenRight + 30;
@@ -81,6 +85,7 @@ public class Ground : MonoBehaviour{
         goGround.groundHeight = go.transform.position.y + (goCollider.size.y / 2);
 
 
+        // Sets up enemy spawns for enemies that spawn on platforms
         int groundEnemyNum = Random.Range(0, 2);
         for (int i = 0; i < groundEnemyNum; i++){
             GameObject groundEnemy = Instantiate(EnemyTemplateG.gameObject);
@@ -93,6 +98,7 @@ public class Ground : MonoBehaviour{
             groundEnemy.transform.position = enemyPosG;
         }
 
+        // Sets up enemy spawns for enemies that spawn in the air 
         int flyingEnemyNum = Random.Range(0, 2);
         for (int i = 0; i < flyingEnemyNum; i++){
             GameObject flyingEnemy = Instantiate(EnemyTemplateF.gameObject);
@@ -105,6 +111,7 @@ public class Ground : MonoBehaviour{
             flyingEnemy.transform.position = enemyPosF;
         }
 
+        // Sets up spawns for heart power up 
         int heartNum = Random.Range(0, 2);
         if (player.playerHealth < 3){
             for (int i = 0; i < heartNum; i++){

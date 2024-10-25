@@ -14,6 +14,8 @@ public class GroundEnemy : MonoBehaviour{
 
     // Update is called once per frame
     void Update(){
+        // Destroys enemy objects if they haven't been interacted with by the time they
+        // exit the frame 
         Vector2 pos = transform.position;
         pos.x -= player.velocity.x * Time.fixedDeltaTime;
         if (pos.x < -100)

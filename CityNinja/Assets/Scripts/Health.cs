@@ -22,6 +22,8 @@ public class Health : MonoBehaviour{
 
     // Update is called once per frame
     void Update(){
+        // Controls how health gets added after picking up a heart power up 
+        // and its attached sprite's appearance
         for (int i = 0; i < hearts.Length; i++){
             if (health > numOfHearts){
                 health = numOfHearts;

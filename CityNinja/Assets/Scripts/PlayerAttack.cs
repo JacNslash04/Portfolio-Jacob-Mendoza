@@ -19,6 +19,8 @@ public class PlayerAttack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Sets up attack function/animations once the player
+        // presses the Attack key [F]
         if (Input.GetKeyDown(KeyCode.F))
         {
             Attack();
@@ -32,14 +34,16 @@ public class PlayerAttack : MonoBehaviour
 
     private void Attack()
     {
-        
+        // Sets up collision check between the player attack and enemies 
         animator.SetBool("isAttacking", true);
 
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
         
         foreach (Collider2D enemy in hitEnemies)
         {
+            // Console log to check if enemies are being hit correctly
             Debug.Log("Enemy hit");
+            // Destroys enemy object on valid hit 
             Destroy(enemy.gameObject);
         }
 

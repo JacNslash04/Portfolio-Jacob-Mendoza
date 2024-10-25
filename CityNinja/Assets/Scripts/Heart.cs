@@ -15,6 +15,8 @@ public class Heart : MonoBehaviour{
 
     // Update is called once per frame
     void Update(){
+        // Heart power up destroyed after not being picked up and exiting 
+        // the frame
         Vector2 pos = transform.position;
 
         pos.x -= player.velocity.x * Time.fixedDeltaTime;

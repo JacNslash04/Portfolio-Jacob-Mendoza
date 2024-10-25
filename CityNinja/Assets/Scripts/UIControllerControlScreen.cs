@@ -22,11 +22,13 @@ public class UIControllerControlScreen : MonoBehaviour
 
     public void start()
     {
+        // Brings player to the game screen when ready 
         UnityEngine.SceneManagement.SceneManager.LoadScene("SampleScene");
     }
 
     public void backToMenu()
     {
+        // Returns players back to the menu screen
         UnityEngine.SceneManagement.SceneManager.LoadScene("Menu");
     }
 
