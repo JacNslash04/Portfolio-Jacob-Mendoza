@@ -1,6 +1,6 @@
 Thank you for taking the time to view my portfolio!
 Below are brief descriptions of each project within this repository:
-** For projects initially made as coursework, I have specified what year I made them **
+** For projects that have been incorporated into some of my coursework, I have specified what year I worked on them as such.**
 
 1. City Ninja _Sophomore_ (In Development):
    Welcome to City Ninja (working title). In this high energy endless runner, players take on the role of a ninja who is on the run from the samurai authorities and must survive for as long as they can.  
