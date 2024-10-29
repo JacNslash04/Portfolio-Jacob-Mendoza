@@ -8,6 +8,7 @@ Below are brief descriptions of each project within this repository:
    I began developing this game as a project for my university's Game Design course and as a chance to acquaint myself with the Unity engine and the C# language. Following the completion of the course,
    I decided to continue developing the game as a side project. For specifics on what I have planned for the game, please refer to the GDD also located within this repository.
 <img width="725" alt="TitleScreen" src="https://github.com/user-attachments/assets/f1a2dd83-8955-43b4-a46f-ed730c5b5c25">
+<img width="730" alt="ControlScreen" src="https://github.com/user-attachments/assets/7ac3aa80-0f3a-40b3-a306-5044913295fd">
 <img width="739" alt="GameScreen3" src="https://github.com/user-attachments/assets/91796ec5-f94b-451b-83d0-2fbc68762761">
 
 2. Shrubby's Pinecone Collector _Freshman_:
