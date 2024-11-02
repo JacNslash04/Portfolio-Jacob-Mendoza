@@ -1,3 +1,7 @@
+(THIS PORTFOLIO IS CURRENTLY OUTDATED AND HAS YET TO BE UDPATED)
+(THE CURRENTLY UP TO DATE FILES ON THIS REPOSITORY ARE THE CITY NINJA AND PINECONE COLLECTOR FILES)
+
+
 Thank you for taking the time to view my portfolio!
 Below are brief descriptions of each project within this repository:
 ** For projects that have been incorporated into some of my coursework, I have specified what year I worked on them as such.**
